@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Malta</title>
+    <link href="/main.css" rel="stylesheet"/>
+</head>
+<body>
+<div id="app">
+    <header id="toolbar">
+        <div id="brand">
+            <span id="brandIcon" aria-hidden="true">📊</span>
+            <span id="brandName">Malta</span>
+        </div>
+        <button id="btnSobre" class="btn-ghost" title="Sobre Malta">ℹ</button>
+    </header>
+
+    <main id="content">
+        <p class="explicacion">
+            Malta xera informes de seguimento da programación cando o profesorado
+            os pide desde a interface de <strong>Informes</strong> de Tao — non
+            fai falla volver abrir esta xanela para iso. Aquí só se configura a
+            intelixencia artificial que Malta usará para redactalos.
+        </p>
+
+        <section id="axustesSeccion">
+            <h2>Axustes de IA</h2>
+            <p id="importadaDeYangAviso" class="hidden">
+                Clave importada automaticamente de Yang. Podes editala se queres usar outra.
+            </p>
+            <form id="formAxustes">
+                <label>
+                    Provedor
+                    <select id="iaProvedor">
+                        <option value="gemini">Gemini</option>
+                        <option value="anthropic">Anthropic (Claude)</option>
+                        <option value="openai">OpenAI / compatible con OpenAI</option>
+                    </select>
+                </label>
+                <label>
+                    Clave da API
+                    <input id="iaApiKey" type="password" autocomplete="off"/>
+                </label>
+                <label>
+                    Modelo
+                    <input id="iaModel" type="text" placeholder="ex. gemini-2.5-flash"/>
+                </label>
+                <label>
+                    Enderezo do servidor (opcional — só se non é o oficial do provedor)
+                    <input id="iaBaseUrl" type="text" placeholder=""/>
+                </label>
+                <div class="fila">
+                    <button type="submit" class="btn-primary">Gardar</button>
+                    <span id="statusAxustes"></span>
+                </div>
+            </form>
+        </section>
+    </main>
+</div>
+
+<div id="overlaySobre" class="overlay hidden">
+    <div class="modal">
+        <h2 id="sobreTitulo">Sobre Malta</h2>
+        <div class="sobre-corpo">
+            <img id="sobreLogo" src="" alt="Malta" class="sobre-logo hidden">
+            <span id="sobreLogoEmoji" class="sobre-logo-emoji" aria-hidden="true">📊</span>
+            <p id="sobreVersion" class="modal-nota"></p>
+            <p id="sobreDescricion"></p>
+            <p id="sobreAutor"></p>
+            <p><a id="sobreWeb" href="#" target="_blank" class="hidden"></a></p>
+            <p id="sobreContacto"></p>
+            <p class="sobre-licenza">Licenza GNU General Public License v3 (GPLv3)</p>
+            <p class="modal-nota">Software libre: pódese usar, estudar, modificar e redistribuír
+                libremente. Calquera traballo derivado que se redistribúa ten que publicarse
+                tamén baixo GPLv3, co código fonte dispoñible (copyleft). Texto completo no
+                ficheiro LICENSE.</p>
+        </div>
+        <div class="modal-actions">
+            <button id="btnSobrePechar" class="primary">Pechar</button>
+        </div>
+    </div>
+</div>
+
+<script src="/main.js"></script>
+</body>
+</html>

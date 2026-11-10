@@ -1,0 +1,12 @@
+{
+  "id": "malta",
+  "nome": "Malta",
+  "icona": "📊",
+  "iconaImaxe": "malta.png",
+  "descricion": "Creación de informes coa axuda da IA",
+  "executable": "malta",
+  "version": "26.11.1",
+  "autor": "Martin",
+  "email": "martindetecnoloxia@gmail.com",
+  "permisos": []
+}

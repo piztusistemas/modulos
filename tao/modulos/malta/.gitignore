@@ -1,0 +1,15 @@
+# Wails bin directory
+build/bin
+
+# Stray artifact of `go build ./...` run from this directory (module name
+# == dir name, so the plain "go build" default output lands here instead
+# of build/bin/)
+/malta
+
+# Bindings xerados por `wails build`/`wails dev` (wailsjsdir en wails.json) —
+# o frontend "plano" non os importa (ver main.js), non fai falla commitealos.
+frontend/wailsjs
+
+# IDEs
+.idea
+.vscode

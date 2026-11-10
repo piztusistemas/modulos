@@ -1,0 +1,10 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "malta",
+  "outputfilename": "malta",
+  "wailsjsdir": "./frontend",
+  "author": {
+    "name": "Martin",
+    "email": "martindetecnoloxia@gmail.com"
+  }
+}

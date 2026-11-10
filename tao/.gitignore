@@ -1,0 +1,18 @@
+# Clave privada da CA do departamento: NUNCA ao repositorio (é público).
+ca/ca.key
+*.p12
+*.pem
+
+# Artefactos de compilación
+node_modules/
+frontend/dist/
+build/bin/
+modulos/malta/malta
+modulos/malta/build/bin/
+/tao
+*.zip
+*.zip.sha256
+
+# Lixo local
+.claude/
+.DS_Store
